@@ -1,0 +1,9 @@
+.overlay-image{
+    z-index: 1000;
+}
+p{
+    z-index: 1000;
+}
+.carouselbg{
+    z-index: 0;
+}
