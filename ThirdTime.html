@@ -1,48 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrapstyle.css">
     <link rel="stylesheet" href="sticky-footer-navbar.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <div class="container-fluid w-100">
-            <a class="navbar-brand" href="index.html"><img src="images\Garlemald_Flag_tiny.jpg" class = "image-fluid"></a>
-            <!--Navbar tabs-->
-            <ul class="nav navbar-nav nav-tabs navbar-right bg-primary" id="navtabs" role="tablist">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+        <a class="navbar-brand" href="#navbar"><img src="images\Garlemald_Flag_tiny.jpg" class="image-fluid"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav justify-content-end nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link" id="stances-tab" data-toggle="tab" href="#stances" role="tab" aria-controls="stances" aria-selected="false">Stances</a>
+                    <a class="nav-link" href="#stancesbar">Stances </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="media-tab" data-toggle="tab" href="#media" role="tab" aria-controls="media" aria-selected="false">Media</a>
+                    <a class="nav-link" href="#mediabar">Media</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="engagement-tab" data-toggle="tab" href="#engagement" role="tab" aria-controls="engagement" aria-selected="false">Engagement</a>
+                    <a class="nav-link" href="#engagementbar">Engagement</a>
                 </li>
             </ul>
-            <!--End navbar tabs-->
         </div>
+    </nav>
+
+
+
+
+
+
+    <!-- <nav class="navbar navbar-dark bg-primary fixed-top">
+        <div class="container-fluid w-100">
+            <a class="navbar-brand" href="index.html"><img src="images\Garlemald_Flag_tiny.jpg" class = "image-fluid"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtabs">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+    <!--Navbar tabs-->
+    <!-- <div class="navbar-collapse collapse"> -->
+    <!-- <ul class="nav navbar-nav nav-tabs navbar-right bg-primary" id="navtabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="stances-tab" data-toggle="tab" href="#stances" role="tab" aria-controls="stances"
+                            aria-selected="false">Stances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="media-tab" data-toggle="tab" href="#media" role="tab" aria-controls="media"
+                            aria-selected="false">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="engagement-tab" data-toggle="tab" href="#engagement" role="tab"
+                            aria-controls="engagement" aria-selected="false">Engagement</a>
+                    </li>
+                </ul> -->
+    <!-- </div> -->
+    <!--End navbar tabs-->
+    </div>
     </nav>
     <!--End navbar-->
     <!--Carousel background-->
-    <div class="container-flex mt-5 bg-dark">
+    <div class="container-fluid mt-5 bg-dark">
         <div class="row">
-            <div class="col-8 mt-5 d-flex">
-                <div id="carouselbg" class="carousel slide" data-ride="carousel">
+            <div class="col mt-5 d-fluid">
+                <div id="carouselbg" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block" src="images/Zenos_Echoes_of_a_Fallen_Star_75.jpg">
+                            <img class="d-block" src="images/Zenos_Echoes_of_a_Fallen_Star.jpg">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block" src="images/FFXIV_Zenos_Throne_75.png">
+                            <img class="d-block" src="images/FFXIV_Zenos_Throne.png">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block" src="images/FFXIV_Zenos_Katana_Otaku_75.png">
+                            <img class="d-block" src="images/FFXIV_Zenos_Katana_Otaku.png">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselbg" role="button" data-slide="prev">
@@ -54,25 +92,25 @@
                         <span class="sr-only">Next</span>
                     </a>
                     <div class="row">
-                        <div class="col-sm-12 text-center">
-                            <div class="container-flex">
-                                <!-- <div class="main-text bg-danger">
+                        <!-- <div class="col-sm-12 text-center">
+                            <div class="container-flex"> -->
+                        <!-- <div class="main-text bg-danger">
                                     <h1>
                                         Static Headline And Content</h1>
                                     <h3>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     </h3>
                                 </div> -->
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-4 mt-5 d-flex">
-                <img src="images/DFFNT_Zenos_yae_Galvus_Costume_02-C.png" class="image-flex float-right overlay-image">
-                <div class="row">
+        </div>
+    </div>
+    <div class="col mt-5 d-fluid">
+        <img src="images/DFFNT_Zenos_yae_Galvus_Costume_02-C.png" class="image-fluid affix overlay-image">
+        <!-- <div class="row">
                     <div class="col-sm-12">
-                        <div class="container-flex sticky-top">
+                        <div class="container-flex">
                             <div class="main-text2">
                                 <div class="card">
                                     <div class="card-body">
@@ -85,81 +123,132 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            
-        </div>
+                </div> -->
+    </div>
+
+    </div>
     </div>
     <!--Carousel ends here-->
+    <br>
+    <div class="row" id="stancesbar">
+        <div class="col-8">
+            <div class="container bg-warning text-center">
+                <h4>
+                    S T A N C E S
+                </h4>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-8">
-            <div class="container-flex">
-            <div class="media">
-                <img class="align-self-center mr-3" src="..." alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0">Center-aligned media</h5>
-                  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                  <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <div class="container-flex bg-light">
+                <div class="media">
+                    <img class="align-self-center mr-3" src="images\FFXIV_Fordola_Resonant_Eye.webp" alt="">
+                    <div class="media-body">
+                        <h5 class="mt-0">Superpowers for everyone</h5>
+                        <p>Return the reins of fate to the hands of man! No longer will we be slave to the whims of
+                            fickle gods and shadowless pretenders. Under the Resonant initiative we will seize these
+                            ancient powers for ourselves! </p>
+                        <p class="mb-0">Subject to standards of worthiness and desire to hunt, to kill. Preliminary
+                            volunteers experience high mortality rate.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="media">
-                <img class="align-self-center ml-3" src="..." alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0">Center-aligned media</h5>
-                  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                  <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <br>
+                <div class="media">
+                    <img class="align-self-center mr-3" src="images\FFXIV_Shinryu_and_Zenos_artwork.webp"
+                        alt="Shinryu FFXIV">
+                    <div class="media-body">
+                        <h5 class="mt-0">Make giant monsters work for you!</h5>
+                        <p>Worry no more about your neighbors summoning lesser gods in panicked self-defense! Under the
+                            Resonant initiative, those gifted new abilities will be able to subsume the will of eikons
+                            to their own purposes!</p>
+                        <p class="mb-0">Degree of power dependent on strength of eikon and degree of control subject to
+                            individual willpower. </p>
+                    </div>
                 </div>
-              </div>
-              <div class="media">
-                <img class="align-self-center mr-3" src="..." alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0">Center-aligned media</h5>
-                  <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                  <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <br>
+                <div class="media">
+                    <img class="align-self-center mr-3" src="images\7CYLU9H.png" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="mt-0">Advanced militarization of police!</h5>
+                        <p>We won't just arm the police with ever increasing levels of lethality, we'll experiment on
+                            them! You'll rest easy knowing superpowered mechanically-enhanced soldiers are patrolling the streets!</p>
+                        <p class="mb-0">Chainsaw hands, built in gattling guns, and internally powered flamethrowers are
+                            just a few of the things we'll implement!</p>
+                    </div>
                 </div>
-                </div>
-              </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row" id="mediabar">
+        <div class="col-8">
+            <div class="container bg-warning text-center">
+                <h4>
+                    M E D I A
+                </h4>
+            </div>
         </div>
     </div>
     <div class="row">
         <div class="col-8">
             <div class="container-flex">
                 <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                      <h1 class="display-4">Fluid jumbotron</h1>
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                      </div>
-                      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                    <div class="container bg-light">
+                        <h1 class="display-4">The candidate in his own words</h1>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3IWlgKbIZag"
+                                allowfullscreen></iframe>
+                        </div>
+                        <p class="lead"></p>
                     </div>
-                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row" id="engagementbar">
+        <div class="col-8">
+            <div class="container bg-warning text-center">
+                <h4>
+                    E N G A G E M E N T
+                </h4>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-8">
-            <div class="container-flex">
+            <div class="container-flex bg-light">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
+                    <li class="list-group-item"><a href="https://vrsws.sos.ky.gov/ovrweb/">Register to vote</a></li>
+                    <li class="list-group-item"><a href="https://fayettecountyclerk.com/web/elections/votingLocations.htm">Check your polling location</a></li>
+                    <li class="list-group-item"><a href="https://na.finalfantasyxiv.com/">Affiliates</li>
+                    <li class="list-group-item"><a href="https://www.extra-life.org/">Donate</li>
+                    <li class="list-group-item"><a href="https://www.youtube.com/embed/ADpCHJ81N7A?start=1556">Upcoming appearances</li>
+                </ul>
             </div>
         </div>
     </div>
     <!--Footer-->
     <footer class="footer">
         <div class="container">
-            <span class="text-muted">Place sticky footer content here.</span>
+            <span class="text-muted">Website constructed for parody/educational purposes only. The creator doesn't endorse Zenos yae Galvus for any position of responsibility.</span>
         </div>
     </footer>
     <!--End footer-->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://rawgit.com/bassjobsen/affix/master/assets/js/affix.js"></script> -->
     <script src="main.js"></script>
 </body>
+
 </html>
