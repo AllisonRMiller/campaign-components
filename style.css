@@ -1,9 +1,20 @@
 .overlay-image{
     z-index: 1000;
+    right:0;
 }
-p{
-    z-index: 1000;
-}
-.carouselbg{
-    z-index: 0;
-}
+
+.affix {
+    position: fixed;
+    top:10vh;
+    opacity: 1;
+  }
+  
+.affix-top {
+    position: static;
+    opacity: 0.8;
+  }
+@media screen and (max-width: 900px) { 
+
+    .overlay-image { display: none; }  
+    
+    }
